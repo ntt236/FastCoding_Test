@@ -1,0 +1,75 @@
+/* ==========================================================================
+   SERVICES PROVIDE FOR YOU SECTION
+   ========================================================================== */
+
+.services-section {
+  background-color: #ffffff;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  background-color: var(--bg-page);
+  border-radius: 18px;
+  padding: 40px 32px;
+  border: 1px solid var(--border-light);
+  transition: all var(--transition-normal);
+}
+
+.service-card:hover {
+  background-color: #ffffff;
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(242, 91, 56, 0.3);
+}
+
+.service-icon-box {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  background-color: var(--primary-light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+  transition: var(--transition-fast);
+}
+
+.service-card:hover .service-icon-box {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+.service-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-title);
+  margin-bottom: 12px;
+}
+
+.service-desc {
+  font-size: 0.95rem;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-title);
+}
+
+.service-link:hover {
+  color: var(--primary);
+  gap: 12px;
+}

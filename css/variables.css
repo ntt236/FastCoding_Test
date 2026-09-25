@@ -1,0 +1,36 @@
+:root {
+  /* Colors */
+  --primary: #f25b38;
+  --primary-hover: #e04723;
+  --primary-light: #fff2ef;
+  --primary-glow: rgba(242, 91, 56, 0.25);
+
+  --dark-header: #071C1F;
+  --dark-footer: #111625;
+  --dark-accent: #1e2638;
+
+  --text-title: #111827;
+  --text-body: #64748b;
+  --text-muted: #94a3b8;
+
+  --bg-page: #F2F6F7;
+  --bg-white: #ffffff;
+  --bg-card: #ffffff;
+  --bg-gray-subtle: #f3f5f9;
+
+  --border-light: #eaedf2;
+  --border-focus: #f25b38;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 10px 30px rgba(18, 24, 39, 0.06);
+  --shadow-lg: 0 20px 40px rgba(18, 24, 39, 0.09);
+  --shadow-primary: 0 12px 28px rgba(242, 91, 56, 0.28);
+
+  /* Typography */
+  --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}

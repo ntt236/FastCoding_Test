@@ -1,0 +1,233 @@
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+
+.hero-section {
+  padding: 60px 0 100px;
+  background-color: var(--bg-page);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-headline-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.hero-title {
+  font-size: 3.8rem;
+  font-weight: 800;
+  color: var(--text-title);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.doodle-arrow {
+  position: absolute;
+  bottom: -25px;
+  right: -80px;
+  width: 140px;
+  height: 100px;
+  pointer-events: none;
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  color: var(--text-body);
+  max-width: 480px;
+  margin-bottom: 36px;
+  line-height: 1.7;
+}
+
+.hero-btn-group {
+  margin-bottom: 60px;
+}
+
+/* House Slider Indicator Tabs */
+.hero-house-slider {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.house-tabs {
+  display: flex;
+  align-items: flex-end;
+}
+
+.house-tab {
+  background-color: #9aa4b2;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 14px 18px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.house-tab:nth-child(1) {
+  height: 58px;
+  background-color: #7b889b;
+}
+
+.house-tab:nth-child(2) {
+  height: 46px;
+  background-color: #8c99ac;
+}
+
+.house-tab:nth-child(3) {
+  height: 36px;
+  background-color: #a1adbd;
+}
+
+.house-tab.active {
+  background-color: #5d6b80;
+}
+
+.slider-numbers {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.slider-numbers .active-line {
+  display: inline-block;
+  width: 28px;
+  height: 2.5px;
+  background-color: var(--primary);
+  border-radius: 2px;
+}
+
+.slider-numbers .num.active {
+  color: var(--text-title);
+}
+
+/* Hero Visual Box */
+.hero-visual {
+  position: relative;
+}
+
+.hero-image-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: visible;
+}
+
+.hero-main-img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Floating Badge: Revenue */
+.floating-badge.badge-revenue {
+  width: 240px;
+  height: 190px;
+  position: absolute;
+  bottom: -30px;
+  left: -20px;
+  background-color: var(--bg-white);
+  padding: 16px 24px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-light);
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.badge-icon-box {
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-light);
+  color: var(--primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.badge-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-val {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-title);
+  line-height: 1.2;
+}
+
+.badge-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+/* Floating Badge: Play button */
+.floating-badge.badge-play {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 8px 10px 8px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 10px 24px var(--primary-glow);
+  cursor: pointer;
+  transition: var(--transition-normal);
+}
+
+.floating-badge.badge-play:hover {
+  transform: scale(1.04);
+}
+
+.play-text {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.play-btn-circle {
+  width: 38px;
+  height: 38px;
+  background-color: #ffffff;
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  padding-left: 2px;
+}
+
+@keyframes floatSlow {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}

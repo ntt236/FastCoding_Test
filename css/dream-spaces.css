@@ -1,0 +1,203 @@
+/* ==========================================================================
+   DREAM LIVING SPACES & TODAY SELLS PROPERTY
+   ========================================================================== */
+
+.dream-spaces-section {
+  background-color: var(--bg-page);
+}
+
+.spaces-row {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: center;
+  gap: 70px;
+  margin-bottom: 120px;
+}
+
+.spaces-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 520px;
+}
+
+/* Ảnh phía sau (góc trên bên phải) */
+.spaces-img-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 290px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 0;
+  z-index: 1;
+}
+
+/* Ảnh phía trước (góc dưới bên trái, xếp so le bậc thang chuẩn Figma) */
+.spaces-img-front {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 320px;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 0;
+  z-index: 2;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+}
+
+/* Huy hiệu 5 Star Rating nằm ngay góc trên bên phải của ảnh sau */
+.star-rating-badge {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 82px;
+  height: 82px;
+  background-color: var(--dark-header);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 0;
+  z-index: 3;
+  box-shadow: var(--shadow-md);
+}
+
+.star-rating-badge i {
+  color: var(--primary);
+  font-size: 1.35rem;
+}
+
+.star-rating-badge span {
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 36px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  transition: var(--transition-fast);
+}
+
+.feature-item-highlight {
+  background-color: #ffffff;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: var(--primary-light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.feature-heading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-title);
+  margin-bottom: 6px;
+}
+
+.feature-text {
+  font-size: 0.92rem;
+  color: var(--text-body);
+}
+
+/* Today Sells Property Block */
+.today-sells-block {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  align-items: center;
+  gap: 60px;
+  background-color: #ffffff;
+  padding: 60px;
+  border-radius: 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+}
+
+.badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.today-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text-title);
+  margin-bottom: 24px;
+}
+
+.today-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.today-checklist li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-title);
+}
+
+.today-checklist li i {
+  color: var(--primary);
+  font-size: 1.15rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-rows: repeat(2, 160px);
+  gap: 16px;
+}
+
+.gallery-item {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.gallery-item.item-large {
+  grid-row: span 2;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}

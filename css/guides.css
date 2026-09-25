@@ -1,0 +1,81 @@
+/* ==========================================================================
+   GUIDES SECTION (COMMERCIAL REAL ESTATE & OFFICE)
+   ========================================================================== */
+
+.guides-section {
+  background-color: #ffffff;
+
+}
+
+.guides-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.guide-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 50px 36px;
+  text-align: center;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.guide-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md);
+}
+
+.guide-icon-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ffeae5;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin: 0 auto 28px;
+}
+
+.guide-title {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--text-title);
+  margin-bottom: 16px;
+}
+
+.guide-desc {
+  font-size: 0.95rem;
+  color: var(--text-body);
+  line-height: 1.6;
+}
+
+/* Featured / Active Card in Guides */
+.guide-card-active {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-primary);
+  transform: translateY(-6px);
+}
+
+.guide-card-active:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 45px rgba(242, 91, 56, 0.4);
+}
+
+.guide-card-active .guide-icon-box {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.guide-card-active .guide-title {
+  color: #ffffff;
+}
+
+.guide-card-active .guide-desc {
+  color: rgba(255, 255, 255, 0.92);
+}

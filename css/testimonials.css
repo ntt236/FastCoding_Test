@@ -1,0 +1,117 @@
+/* ==========================================================================
+   TESTIMONIALS SECTION
+   ========================================================================== */
+
+.testimonials-section {
+  background-color: #ffffff;
+}
+
+.testimonial-carousel-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.carousel-nav-btn {
+  width: 80px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  font-size: 1.1rem;
+}
+
+.prev-btn {
+  background-color: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  color: var(--text-title);
+}
+
+.prev-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.next-btn {
+  background-color: var(--primary);
+  color: #ffffff;
+  box-shadow: 0 8px 20px var(--primary-glow);
+}
+
+.next-btn:hover {
+  background-color: var(--primary-hover);
+  transform: scale(1.05);
+}
+
+.testimonial-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.client-photo-wrapper {
+  position: relative;
+  width: 260px;
+  height: 280px;
+}
+
+.photo-accent-backdrop {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.client-avatar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  z-index: 2;
+  box-shadow: var(--shadow-md);
+}
+
+.quote-mark {
+  font-size: 4rem;
+  color: #fca28d;
+  line-height: 1;
+  font-family: Georgia, serif;
+}
+
+.quote-text {
+  font-size: 1.15rem;
+  color: var(--text-title);
+  line-height: 1.7;
+  margin: 12px 0 20px;
+  font-weight: 500;
+}
+
+.star-rating {
+  display: flex;
+  gap: 6px;
+  color: #f59e0b;
+  margin-bottom: 20px;
+}
+
+.client-name {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text-title);
+}
+
+.client-role {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}

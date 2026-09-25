@@ -1,0 +1,138 @@
+/* BASE UTILITIES, CONTAINERS, TYPOGRAPHY & BUTTONS */
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Section Common Styling */
+.section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.section-header {
+  margin-bottom: 56px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-title);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-body);
+  max-width: 350px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.section-subtitle.text-left {
+  margin: 0;
+}
+
+.section-badge-text {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 12px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+}
+
+.dot {
+  color: var(--primary);
+}
+
+/* Button System */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #ffffff;
+  box-shadow: 0 8px 20px var(--primary-glow);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-primary);
+}
+
+.btn-large {
+  padding: 15px 34px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+  border-radius: 6px;
+  padding: 12px 32px;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-text {
+  color: var(--text-title);
+  font-weight: 600;
+  padding: 8px 16px;
+}
+
+.btn-text:hover {
+  color: var(--primary);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* Utility Helpers */
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
