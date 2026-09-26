@@ -28,6 +28,18 @@
   color: var(--text-title);
   line-height: 1.15;
   letter-spacing: -0.03em;
+  color: var(--dark-header);
+}
+
+.hero-title .dot {
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  background-color: var(--dark-header);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  font-size: 0;
 }
 
 .doodle-arrow {

@@ -43,21 +43,45 @@
   max-width: 440px;
 }
 
-.graphic-img-card {
+/* .graphic-img-card {
   position: relative;
   border-radius: 18px;
   overflow: visible;
+} */
+.graphic-img-card {
+  position: relative;
+  width: 570px;
+  height: 338px;
 }
 
-.graphic-img-card img {
+/* .graphic-img-card img {
   width: 100%;
   height: 260px;
   object-fit: cover;
   border-radius: 18px;
   box-shadow: var(--shadow-md);
+} */
+.contact-image-back {
+  position: absolute;
+  top: 33px;
+  left: 0;
+  width: 253px;
+  height: 186px;
+  object-fit: cover;
+  z-index: 1;
 }
 
-.floating-accent-square {
+.contact-image-front {
+  position: absolute;
+  top: 91px;
+  left: 126px;
+  width: 394px;
+  height: 216px;
+  object-fit: cover;
+  z-index: 2;
+}
+
+/* .floating-accent-square {
   position: absolute;
   top: -20px;
   right: 60px;
@@ -66,9 +90,19 @@
   background-color: var(--primary);
   border-radius: 10px;
   z-index: 2;
+} */
+.floating-accent-square {
+  position: absolute;
+  top: 0;
+  left: 286px;
+  width: 67px;
+  height: 64px;
+  background: var(--primary);
+  border-radius: 8px;
+  z-index: 4;
 }
 
-.floating-dark-square {
+/* .floating-dark-square {
   position: absolute;
   top: -35px;
   right: 45px;
@@ -77,6 +111,16 @@
   background-color: var(--dark-header);
   border-radius: 8px;
   z-index: 3;
+} */
+.floating-dark-square {
+  position: absolute;
+  top: -9px;
+  left: 330px;
+  width: 31px;
+  height: 29px;
+  background: var(--dark-header);
+  border-radius: 8px;
+  z-index: 5;
 }
 
 /* Contact Form Card */
