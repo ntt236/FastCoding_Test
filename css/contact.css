@@ -169,3 +169,64 @@
   background-color: #ffffff;
   box-shadow: 0 0 0 4px var(--primary-glow);
 }
+
+/* Contact reponsive */
+
+@media (max-width: 768px) {
+
+  .contact-section {
+    overflow: hidden;
+  }
+
+  .contact-row {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .contact-info-col,
+  .contact-form-col {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .contact-decorative-graphic {
+    width: 100%;
+    max-width: 570px;
+    margin: 20px auto 0;
+  }
+
+  .graphic-img-card {
+    width: 100%;
+    height: 338px;
+  }
+
+  .contact-image-back {
+    left: 0;
+    width: 44.4%;
+  }
+
+  .contact-image-front {
+    left: 22.1%;
+    width: 69.1%;
+  }
+
+  .floating-accent-square {
+    left: 50%;
+  }
+
+  .floating-dark-square {
+    left: calc(50% + 44px);
+  }
+
+  .contact-form-card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 28px 22px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

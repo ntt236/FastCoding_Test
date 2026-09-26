@@ -243,3 +243,102 @@
     transform: translateY(-8px);
   }
 }
+
+/* Hero reponsive */
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    padding: 40px 0 70px;
+    overflow: hidden;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    line-height: 1.15;
+  }
+
+  .hero-headline-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+    max-width: 100%;
+    line-height: 1.6;
+  }
+
+  .hero-btn-group {
+    margin-bottom: 45px;
+  }
+
+  .hero-visual {
+    width: 100%;
+  }
+
+  .hero-main-img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .floating-badge.badge-revenue {
+    width: 190px;
+    height: 130px;
+    left: -10px;
+    bottom: -25px;
+    padding: 14px 18px;
+  }
+
+  .badge-icon-box {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .badge-val {
+    font-size: 1.1rem;
+  }
+
+  .badge-label {
+    font-size: 0.75rem;
+  }
+
+  .floating-badge.badge-play {
+    right: 0;
+    bottom: 0;
+    padding: 7px 8px 7px 16px;
+  }
+
+  .play-text {
+    font-size: 0.85rem;
+  }
+
+  .play-btn-circle {
+    width: 34px;
+    height: 34px;
+  }
+
+  .doodle-arrow {
+    width: 100px;
+    height: auto;
+    right: -20px;
+    bottom: -35px;
+  }
+
+  .hero-house-slider {
+    gap: 20px;
+  }
+
+  .house-tab {
+    padding: 10px 12px;
+  }
+}
